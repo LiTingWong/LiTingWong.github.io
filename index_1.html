@@ -8,6 +8,7 @@
 <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
 
 <style>
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,11 +53,13 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+
 body{
 	/*background-image:url(images/abstract_colorful_background.jpg);
 	background-size: 100% 100%;
     background-repeat: no-repeat;*/
 	/*positoin:realtive;*/
+	background-color:#eee;
 }
 
 div{
@@ -66,30 +69,26 @@ div{
 }
 
 #wrapper_box{
-	width:100%;
-	/*margin-right:auto;
-	margin-left: auto;*/
+	width:70%;
+	margin-right:auto;
+	margin-left: auto;
 	position:relative;
-	margin:0px;
-	padding:0px;
-	border:0px;
+	background-color:white;
+	padding:0px 30px;
+	border: 1px solid #ccc;
+    border-width: 0px 1px;
 }
 
-#header_div{
-	width:100%;
-	margin:auto;
-	background-color:#ff5a45;
-}
 
 .header{
-	width:78%;
+	width:100%;
 	/*min-height:128px;*/
 	/*margin-top:0px;
 	margin-bottom:0px;*/
 	margin-right:auto;
 	margin-left: auto;
 	position:relative;
-	background-color:#ff5a45;
+	/*background-color:#ff5a45;*/
 	padding: 30px 0px;
 	/*background: -webkit-linear-gradient(right top, #F69 , white); /* For Safari 5.1 to 6.0 */
     /*background: -o-linear-gradient(top right, #F69 , white); /* For Opera 11.1 to 12.0 */
@@ -144,6 +143,7 @@ div{
 	-moz-background-size: cover;
 	-o-background-size: cover;*/
 	/*margin-bottom:10px;*/
+	margin-bottom:30px;
 }
 
 #nav{
@@ -211,18 +211,19 @@ a:hover{
 }
 
 .slider {
-  width: 80%;
+  width: 100%;
   height:600px;
   overflow: hidden;
-  /*-webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
   -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
-  box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);*/
-  /*padding: 30px 0 0 0;*/
+  box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
+  padding: 30px 0 0 0;
   overflow: hidden;
   position: relative;
-  background-color: #414141;
+  /*background-color: #414141;*/
   padding: 30px 0px;
   margin:auto;
+  margin-bottom:30px;
 }
 
 .inner_pic {
@@ -307,27 +308,22 @@ a:hover{
 	height:100%;
 }
 
-#article_div{
-	width:100%;
-	background-color:#97ce7f;
-	padding:80px 0px;
-}
 
 #article{
-	width: 70%;
+	width: 100%;
 	/*background-color: rgba(255,204,0,0.5);*/
 	margin-left:auto;
 	margin-right:auto;
-	background-color:#97ce7f;
+	
 	padding: 30px 0px;
 }
 
 #article h1 {
 	text-align: center;
-	color: #f4f4f4;
+	color: #ff5a45;
 	letter-spacing: 1px;
-	font-size: 2em;
 	font-weight: normal;
+	font-weight: 700;
 	text-shadow: 2px 2px 2px #212121;
 }
 
@@ -348,11 +344,9 @@ a:hover{
 
 <div id="wrapper_box">
 <!--header 開始-->
-<div id=header_div>
 <div class="header">
 	<h1>RCPA</h1>
     <!--<img id="rcpa_logo" src="images/rcpa_logo.jpg" alt="RCPA">-->
-</div>
 </div>
 <!--header 結束-->
 
@@ -374,7 +368,7 @@ a:hover{
     <!--navigation 結束-->
     
     <!--slider 開始-->
-    <div id=slider_div>
+    
     <div class="slider">
         <div class="inner_pic">
             <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="2000" data-cycle-center-vert=true data-cycle-center-horz=true data-cycle-prev="#prev" 
@@ -400,14 +394,14 @@ a:hover{
             </ul>
         </div>
     </div><!--slider_box--> 
-	</div><!--slider_div-->
 	
-    <div id=article_div>
+	
+    
     <div id="article">
         <h1>Welcom!</h1>
         <p>RCPA is a blahblalhblajblahlahblahlbhala</p>
     </div>
-    </div>
+    
 
 
 </div><!--wrapper_box-->
