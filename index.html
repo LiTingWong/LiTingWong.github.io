@@ -549,6 +549,11 @@ html[xmlns] .clearfix {
   #full-clndr .event-listing {
     display: none;
   }
+  
+  
+ #eventCalendar{
+	 font-family: Inconsolata, Monaco, 'Andale Mono', Courier;
+ }
 </style>
 
 
@@ -649,6 +654,7 @@ html[xmlns] .clearfix {
                   </div>
                 </div>
                 <div class="event-listing">
+					<h1 id=eventCalendar>Events</h1>
                   <div class="event-listing-title">EVENTS THIS MONTH</div>
                   <% _.each(eventsThisMonth, function(event) { %>
                       <div class="event-item">

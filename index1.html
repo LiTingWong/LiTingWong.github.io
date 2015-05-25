@@ -15,6 +15,26 @@ if(index==7){
 	document.getElementById("base").setAttribute("href","litingwong.github.io/");
 }
 console.log("url = " +url + " index = " + index);*/
+$(document).ready(function(){
+	var width=document.getElementById("sliderDiv").offsetWidth;
+	console.log("initial screen.width =" + width);
+	document.getElementById("img1").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+	document.getElementById("img2").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+	document.getElementById("img3").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+	document.getElementById("img4").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+	document.getElementById("img5").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+
+	$(window).resize(function() {
+	    //var width = window.innerWidth;
+		var width=document.getElementById("sliderDiv").offsetWidth;
+		console.log("screen.width =" + width);
+		document.getElementById("img1").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+		document.getElementById("img2").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+		document.getElementById("img3").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+		document.getElementById("img4").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+		document.getElementById("img5").style.clip="rect(0px, " + width +"px, 506px, 0px)";
+	});
+});
 </script>
 <style>
 
