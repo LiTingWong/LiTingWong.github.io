@@ -1,0 +1,185 @@
+/*
++----------------------------------------------------------------+
+    Carousel
++----------------------------------------------------------------+
+*/
+.carousel {
+    margin: 0 auto;
+    position: relative;
+    /*width: 960px;*/
+	width:100%;
+	height:100%;
+}
+
+.carousel-wrapper {padding:0;height:100%;}
+
+#activeBoxDiv{
+	border: 7px solid transparent;
+	z-index: 4;
+	width: 66%;
+    height: 50px;
+    left: 17%;
+	top: 0;
+	position:absolute;
+	bottom:0;
+	margin:auto 0;
+}
+	
+
+.carousel-box {
+    border: 7px solid #FFF;
+    background-color: #CFCFCF;
+    height: 124px;
+    left: 50%;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin: -62px 0 0 -100px;
+    width: 200px;
+    z-index: -1;
+	visibility:hidden;
+
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+       -moz-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+        -ms-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+         -o-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+            box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+
+    -webkit-transition: 0.5s ease-out;
+       -moz-transition: 0.5s ease-out;
+        -ms-transition: 0.5s ease-out;
+         -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+}
+
+.carousel-box.is-active {
+    z-index: 4;
+    width: 66%;
+    height: 560px;
+    left: 17%;
+    /*margin: 35px 0 0 -192px;*/
+	margin: 0px 0 0 0;
+    top: 0;
+	visibility:visible;
+}
+
+.carousel-box.left,
+.carousel-box.right {
+    width: 66%;
+    height: 380px;
+	margin: 0;
+    top: 90px;
+    z-index: 2;
+	visibility:visible;
+}
+
+.carousel-box.left {
+    left: 12%;
+	/*transform: translate(-35%, 0);*/
+   /* transform: perspective(600px) rotateY(45deg);
+    -webkit-transform: perspective(600) rotateY(45deg);
+	-moz-transform: perspective(600) rotateY(45deg);
+	-ms-transform: perspective(600) rotateY(45deg);
+	-o-transform: perspective(600) rotateY(45deg);*/
+}
+
+.carousel-box.right {
+    left:22%;
+	/*transform: translate(-15%, 0);*/
+    /*transform: perspective(600px) rotateY(-45deg);
+    -webkit-transform: perspective(600) rotateY(-45deg);
+	-moz-transform: perspective(600) rotateY(-45deg);
+	-ms-transform: perspective(600) rotateY(-45deg);
+	-o-transform: perspective(600) rotateY(-45deg);*/
+}
+
+.carousel-box.left2,
+.carousel-box.right2 {
+	width: 66%;
+	height: 340px;
+	/*left: 170px;*/
+	margin: 0;
+	top: 110px;
+	z-index: 1;
+	visibility:visible;
+}
+
+.carousel-box.left2{
+	left: 7%;
+	/*transform: translate(-45%, 0);*/
+}
+
+.carousel-box.right2{
+	left: 27%;
+	/*transform: translate(-5%, 0);*/
+}
+
+.carousel-box.left3,
+.carousel-box.right3 {
+	width: 66%;
+	height: 300px;
+	margin: 0;
+	top: 130px;
+	z-index: 0;
+	visibility:visible;
+}
+
+.carousel-box.left3{
+	left: 2%;
+	/*transform: translate(-55%, 0);*/
+}
+
+.carousel-box.right3{
+	left: 32%;
+	/*transform: translate(5%, 0);*/
+}
+
+
+
+
+
+/*.nav-left,
+.nav-right {
+    background: url('../example/assets/css/img/arrow.png') no-repeat left 5px;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 17%;
+	z-index:5
+}*/
+
+.nav-left, .nav-right{
+	
+  background: #ccc;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba( 0, 0, 0, 0.6 );
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 6;
+  margin: auto 0px;
+  top: 0;
+  bottom: 0;
+  vertical-align:middle;
+  
+}
+
+.nav-left:hover , .nav-right:hover{
+	cursor:pointer;
+}
+
+.nav-left { left:0%;}
+
+.nav-right {
+     right:0%;
+}
+
