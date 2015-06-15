@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+body{
+	background-color:#eee;
+	overflow-x:hidden;
+}
+
+div{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+/***************************************************
+
+#wrapper_box{
+	width:70%;
+	margin-right:auto;
+	margin-left: auto;
+	position:relative;
+	background-color:white;
+	padding:0px 30px;
+	border: 1px solid #ccc;
+    border-width: 0px 1px;
+}
+
+
+.header{
+	width:100%;
+	/*min-height:128px;*/
+	/*margin-top:0px;
+	margin-bottom:0px;*/
+	margin-right:auto;
+	margin-left: auto;
+	position:relative;
+	/*background-color:#ff5a45;*/
+	padding: 30px 0px;
+	/*background: -webkit-linear-gradient(right top, #F69 , white); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(top right, #F69 , white); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(top right, #F69, white); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(to bottom left, #F69 , white); /* Standard syntax (must be last) */
+	
+	/*background: -webkit-linear-gradient(left,rgba(255,102,153,0) 0%, white 50%, rgba(255,102,153,1) 100%); /*Safari 5.1-6*/
+    /*background: -o-linear-gradient(right,rgba(255,102,153,0) 0%, white 50%, rgba(255,102,0,1) 100%); /*Opera 11.1-12*/
+    /*background: -moz-linear-gradient(right,rgba(255,102,153,0),rgba(255,102,153,1)); /*Fx 3.6-15*/
+    /*background: linear-gradient(to right, rgba(255,102,153,0) 0%, white 50%, rgba(255,102,153,1) 100%); /*Standard*/
+}
+
+.header h1{
+	font-size: 2.5em;;
+	/*position:absolute;
+	bottom:0;*/
+	font-family: "Lucida Console", monospace;
+	letter-spacing: 5px;
+	font-weight:900;
+	margin:0px;
+}
+	
+.main_logo{
+	width:100%;
+	height:auto;
+	position:relative;
+	/*bottom: 0;*/
+	float:right;
+}
+
+#rcpa_logo{
+	clip: rect(40px,160px,120px,0px);
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+#nav_div{
+	width: 100%;
+	/* height: 66px; */
+	/*background-color: rgba(255,102,153,0.5);*/
+	/*background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;*/
+	position: relative;
+	/*-webkit-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);
+	box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);*/
+	z-index: 999;
+	position: relative;
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+	/*margin-bottom:10px;*/
+	margin-bottom:30px;
+}
+
+#nav{
+	border:1px solid #ccc;
+	border-width:1px 0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+#nav li{
+	position:relative;
+	display:inline;
+}
+#nav a{
+	display:inline-block;
+	padding:10px;
+	font-size:x-large;
+}
+#nav ul{
+	position:absolute;
+	/*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+	left:-9999px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+#nav ul li{
+	display:block;
+}
+#nav li:hover ul{
+	left:0;
+}
+#nav li:hover a{
+	text-decoration:underline;
+	background:#f1f1f1;
+}
+#nav li:hover ul a{
+	text-decoration:none;
+	background:white;
+}
+#nav li:hover ul a:hover{
+	text-decoration:underline;
+	background:#f1f1f1;
+}
+#nav ul a{
+	white-space:nowrap;
+	display:block;
+	border-bottom:1px solid #ccc;
+	font-size:x-large;
+}
+a{
+	color:#c00;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover{
+	text-decoration:underline;
+	background:#f1f1f1;
+}
+
+#slider_div{
+	width:100%;
+	background-color:#414141;
+}
+
+.slider {
+  width: 100%;
+  height:600px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
+  box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
+  padding: 30px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  /*background-color: #414141;*/
+  padding: 30px 0px;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.inner_pic {
+  width: 100%;
+  /*height:100%;*/
+  overflow: hidden;
+  z-index: 0;
+  float: left;
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  margin:30px 0px;
+}
+
+.prev {
+  width: 58px;
+  height: 64px;
+  float: left;
+  margin: auto 0 auto 1%;
+  background-image: url(images/leftarrow.png);
+  background-repeat: no-repeat;
+  z-index: 999;
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+}
+
+.next {
+  width: 58px;
+  height: 64px;
+  float: right;
+  margin: auto 1% auto 0;
+  right: 0;
+  background-image: url(images/rightarrow.png);
+  background-repeat: no-repeat;
+  z-index: 999;
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+}
+
+.photo_nav {
+  width: 140px;
+  height: 30px;
+  /*margin: 450px auto 30px auto;*/
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+
+.photo_nav ul {
+	list-style:none;
+	position: absolute;
+	padding:0px;
+}
+
+#pager > * {
+  cursor: pointer;
+}
+.photo_nav ul li {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: #1a0c03;
+  margin: 5px;
+  float: left;
+}
+
+#pager.cycle-pager li.cycle-pager-active {
+  background-color: yellow;
+}
+
+.cycle-slideshow img{
+	margin-left: auto;
+	margin-right:auto;
+	width:100%;
+	height:100%;
+}
+
+.pic_caption {
+  width: 100%;
+  position: absolute;
+  color: #FFFFFF;
+  background: rgba(45, 40, 34, 0.6);
+  bottom: 0;
+  padding: 1.2em 1em;
+  box-sizing: border-box;
+}
+
+.pic_caption h2{
+  font-size: 2em;
+  line-height: 2em;
+  text-shadow: 2px 5px 5px #1d1311;
+}
+
+
+#article{
+	width: 100%;
+	/*background-color: rgba(255,204,0,0.5);*/
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding: 30px 0px;
+}
+
+#article h1 {
+	text-align: center;
+	color: #ff5a45;
+	letter-spacing: 1px;
+	font-size: 2em;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #212121;
+	line-height: 3em;
+}
+
+#article p {
+	text-align: center;
+	line-height: 1.5em;
+ 	margin-bottom: 1em;
+}
+
