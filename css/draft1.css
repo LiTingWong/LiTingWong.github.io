@@ -118,16 +118,16 @@ div{
 	text-align:center;
 	color: white;
 }
-#nav li{
+#nav ul li{
 	position:relative;
 	display:inline;
 }
-#nav a{
+#nav ul li a{
 	display:inline-block;
 	padding:10px;
 	font-size:x-large;
 }
-#nav ul{
+#nav ul ul{
 	position:absolute;
 	/*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
 	left:-9999px;
@@ -135,25 +135,25 @@ div{
 	padding:0;
 	text-align:left;
 }
-#nav ul li{
+#nav ul ul li{
 	display:block;
 }
-#nav li:hover ul{
+#nav ul li:hover ul{
 	left:0;
 }
-#nav li:hover a{
+#nav ul li:hover a{
 	text-decoration:underline;
 	background:#f1f1f1;
 }
-#nav li:hover ul a{
+#nav ul li:hover ul a{
 	text-decoration:none;
 	background:white;
 }
-#nav li:hover ul a:hover{
+#nav ul li:hover ul a:hover{
 	text-decoration:underline;
 	background:#f1f1f1;
 }
-#nav ul a{
+#nav ul ul a{
 	white-space:nowrap;
 	display:block;
 	border-bottom:1px solid #ccc;
