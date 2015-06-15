@@ -69,7 +69,6 @@ div{
 }
 
 .nav_wrap{
-	display: block;
 	background-color:#0F3361;
 	position: relative;
 	z-index: 999;
@@ -79,21 +78,18 @@ div{
 	max-width:98%;
 	margin: 0 auto;
 	height:60px;
-	display:block;
+	text-align: right;
 }
 
 #logo{
 	display:inline-block;
-	height:60px;
+	height:100%;
 	float:left;
 }
 
 #nav ul{
 	list-style:none;
 	color: white;
-	float:right;
-	width:auto;
-	padding: 1em 0 0;
 	background:none;
 }
 #nav ul li{
@@ -101,19 +97,17 @@ div{
 }
 #nav ul li a{
 	color:white;
-	font-weight:bold;
 	float: left;
-	display: block;
-  	padding: 9px 13px 11px;
-  	color: #fff;
+  	padding: 1.2em 13px 1.2em 0px;
   	text-decoration: none;
 	font: menu;
+	font-size:1.5em;
 }
 
 #nav ul li:after {
   content: "|";
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 1.2em;
   margin-left: 2px;
   color: #fff;
 }
