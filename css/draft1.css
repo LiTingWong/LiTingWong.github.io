@@ -87,13 +87,14 @@ div{
 	list-style:none;
 	margin:0;
 	padding:0;
-	text-align:center;
 	color: white;
 	float:right;
+	position:absolute;
 }
 #nav ul li{
-	position:relative;
+	position:absolute;
 	display:inline;
+	float:right;
 }
 #nav ul li a{
 	color:white;
@@ -101,6 +102,9 @@ div{
 	display:inline-block;
 	padding:10px;
 	font-size:x-large;
+	line-height:60px;
+	border-left:1px white;
+	border-right:1px white;
 }
 
 a:hover{
