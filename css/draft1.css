@@ -56,7 +56,7 @@ div{
 	border:0px;
 }
 
-/***************************************************
+/***************************************************/
 
 #wrapper_box{
 	width:70%;
@@ -72,29 +72,14 @@ div{
 
 .header{
 	width:100%;
-	/*min-height:128px;*/
-	/*margin-top:0px;
-	margin-bottom:0px;*/
 	margin-right:auto;
 	margin-left: auto;
 	position:relative;
-	/*background-color:#ff5a45;*/
 	padding: 30px 0px;
-	/*background: -webkit-linear-gradient(right top, #F69 , white); /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(top right, #F69 , white); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(top right, #F69, white); /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(to bottom left, #F69 , white); /* Standard syntax (must be last) */
-	
-	/*background: -webkit-linear-gradient(left,rgba(255,102,153,0) 0%, white 50%, rgba(255,102,153,1) 100%); /*Safari 5.1-6*/
-    /*background: -o-linear-gradient(right,rgba(255,102,153,0) 0%, white 50%, rgba(255,102,0,1) 100%); /*Opera 11.1-12*/
-    /*background: -moz-linear-gradient(right,rgba(255,102,153,0),rgba(255,102,153,1)); /*Fx 3.6-15*/
-    /*background: linear-gradient(to right, rgba(255,102,153,0) 0%, white 50%, rgba(255,102,153,1) 100%); /*Standard*/
 }
 
 .header h1{
 	font-size: 2.5em;;
-	/*position:absolute;
-	bottom:0;*/
 	font-family: "Lucida Console", monospace;
 	letter-spacing: 5px;
 	font-weight:900;
@@ -105,7 +90,6 @@ div{
 	width:100%;
 	height:auto;
 	position:relative;
-	/*bottom: 0;*/
 	float:right;
 }
 
@@ -118,22 +102,11 @@ div{
 
 #nav_div{
 	width: 100%;
-	/* height: 66px; */
-	/*background-color: rgba(255,102,153,0.5);*/
-	/*background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;*/
 	position: relative;
-	/*-webkit-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);
-	-moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);
-	box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.6);*/
 	z-index: 999;
 	position: relative;
-	/*-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;*/
-	/*margin-bottom:10px;*/
 	margin-bottom:30px;
+	color:#0F3361;
 }
 
 #nav{
