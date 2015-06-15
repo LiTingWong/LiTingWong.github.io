@@ -68,13 +68,17 @@ div{
 	border: 0px solid #ccc;
 }
 
+.nav_wrap{
+	display: block;
+	background-color:#0F3361;
+	position: relative;
+	z-index: 999;
+}
+	
 #nav{
 	width: 100%;
 	max-width:98%;
 	height:60px;
-	position: relative;
-	z-index: 999;
-	background-color:#0F3361;
 	display:block;
 }
 
@@ -113,7 +117,7 @@ div{
   color: #fff;
 }
 
-#nav uo li:last-child:after {
+#nav ul li:last-child:after {
   color: transparent;
 }
 
