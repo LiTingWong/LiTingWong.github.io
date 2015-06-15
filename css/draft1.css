@@ -59,45 +59,13 @@ div{
 /***************************************************/
 
 #wrapper_box{
-	width:70%;
+	width:100%;
 	margin-right:auto;
 	margin-left: auto;
 	position:relative;
 	background-color:white;
-	padding:0px 30px;
-	border: 1px solid #ccc;
-    border-width: 0px 1px;
-}
-
-
-.header{
-	width:100%;
-	margin-right:auto;
-	margin-left: auto;
-	position:relative;
-	padding: 30px 0px;
-}
-
-.header h1{
-	font-size: 2.5em;;
-	font-family: "Lucida Console", monospace;
-	letter-spacing: 5px;
-	font-weight:900;
-	margin:0px;
-}
-	
-.main_logo{
-	width:100%;
-	height:auto;
-	position:relative;
-	float:right;
-}
-
-#rcpa_logo{
-	clip: rect(40px,160px,120px,0px);
-	position:absolute;
-	bottom:0;
-	right:0;
+	padding:0px 0px;
+	border: 0px solid #ccc;
 }
 
 #nav{
@@ -107,186 +75,41 @@ div{
 	position: relative;
 	margin-bottom:30px;
 	background-color:#0F3361;
+	height:50px;
+}
+
+#logo{
+	height:46px;
+	float:left;
 }
 
 #nav ul{
-	border:1px solid #ccc;
-	border-width:1px 0;
 	list-style:none;
 	margin:0;
 	padding:0;
 	text-align:center;
 	color: white;
+	float:right;
 }
 #nav ul li{
 	position:relative;
 	display:inline;
 }
 #nav ul li a{
+	color:white;
+	font-weight:bold;
 	display:inline-block;
 	padding:10px;
 	font-size:x-large;
 }
-#nav ul ul{
-	position:absolute;
-	/*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
-	left:-9999px;
-	margin:0;
-	padding:0;
-	text-align:left;
-}
-#nav ul ul li{
-	display:block;
-}
-#nav ul li:hover ul{
-	left:0;
-}
-#nav ul li:hover a{
-	text-decoration:underline;
-	background:#f1f1f1;
-}
-#nav ul li:hover ul a{
-	text-decoration:none;
-	background:white;
-}
-#nav ul li:hover ul a:hover{
-	text-decoration:underline;
-	background:#f1f1f1;
-}
-#nav ul ul a{
-	white-space:nowrap;
-	display:block;
-	border-bottom:1px solid #ccc;
-	font-size:x-large;
-}
-a{
-	color:#c00;
-	text-decoration:none;
-	font-weight:bold;
-}
+
 a:hover{
 	text-decoration:underline;
-	background:#f1f1f1;
+	color:yellow;
 }
 
-#slider_div{
-	width:100%;
-	background-color:#414141;
-}
 
-.slider {
-  width: 100%;
-  height:600px;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
-  -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
-  box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.47);
-  padding: 30px 0 0 0;
-  overflow: hidden;
-  position: relative;
-  /*background-color: #414141;*/
-  padding: 30px 0px;
-  margin:auto;
-  margin-bottom:30px;
-}
 
-.inner_pic {
-  width: 100%;
-  /*height:100%;*/
-  overflow: hidden;
-  z-index: 0;
-  float: left;
-  position: absolute;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  margin:30px 0px;
-}
-
-.prev {
-  width: 58px;
-  height: 64px;
-  float: left;
-  margin: auto 0 auto 1%;
-  background-image: url(images/leftarrow.png);
-  background-repeat: no-repeat;
-  z-index: 999;
-  position: absolute;
-  top:0px;
-  bottom: 0px;
-}
-
-.next {
-  width: 58px;
-  height: 64px;
-  float: right;
-  margin: auto 1% auto 0;
-  right: 0;
-  background-image: url(images/rightarrow.png);
-  background-repeat: no-repeat;
-  z-index: 999;
-  position: absolute;
-  top:0px;
-  bottom: 0px;
-}
-
-.photo_nav {
-  width: 140px;
-  height: 30px;
-  /*margin: 450px auto 30px auto;*/
-  opacity: 0.6;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0px auto;
-}
-
-.photo_nav ul {
-	list-style:none;
-	position: absolute;
-	padding:0px;
-}
-
-#pager > * {
-  cursor: pointer;
-}
-.photo_nav ul li {
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  background: #1a0c03;
-  margin: 5px;
-  float: left;
-}
-
-#pager.cycle-pager li.cycle-pager-active {
-  background-color: yellow;
-}
-
-.cycle-slideshow img{
-	margin-left: auto;
-	margin-right:auto;
-	width:100%;
-	height:100%;
-}
-
-.pic_caption {
-  width: 100%;
-  position: absolute;
-  color: #FFFFFF;
-  background: rgba(45, 40, 34, 0.6);
-  bottom: 0;
-  padding: 1.2em 1em;
-  box-sizing: border-box;
-}
-
-.pic_caption h2{
-  font-size: 2em;
-  line-height: 2em;
-  text-shadow: 2px 5px 5px #1d1311;
-}
 
 
 #article{
