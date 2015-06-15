@@ -85,6 +85,7 @@ div{
 #logo{
 	display:inline-block;
 	height:3.9em;
+	max-height:89px;
 	float:left;
 }
 
@@ -108,7 +109,7 @@ div{
   display: inline-block;
   margin-left: 2px;
   color: #fff;
-  padding-top: 1.25em;
+  padding-top: 1.17em;
 }
 
 #nav ul li:last-child:after {
