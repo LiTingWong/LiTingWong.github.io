@@ -79,7 +79,7 @@ div{
 }
 
 #logo{
-	height:46px;
+	height:60px;
 	float:left;
 }
 
@@ -89,10 +89,8 @@ div{
 	padding:0;
 	color: white;
 	float:right;
-	position:absolute;
 }
 #nav ul li{
-	position:absolute;
 	display:inline;
 	float:right;
 }
