@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-
+/*************reset**********************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,13 +80,18 @@ div{
 	text-align: right;
 	font: menu;
   	font-size: 1.5em;
+	position:relative;
 }
 
 #logo{
 	display:inline-block;
-	height:3.9em;
-	max-height:89px;
-	float:left;
+	height:3 em;
+	max-height:80px;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	margin: auto 0;
 }
 
 #nav ul{
@@ -121,10 +126,6 @@ a:hover{
 	text-decoration:underline;
 	color:orange;
 }
-
-
-
-
 
 #article{
 	width: 100%;
