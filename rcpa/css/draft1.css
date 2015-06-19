@@ -240,19 +240,19 @@ a:hover{
 
 .symbol_circle li div{
 	width: 250px;
-	line-height:56px;
 	height:56px;
 	margin: 0 10px;
 	position:absolute;
 	top:260px;
+	display:table;
 }
 
 .symbol_circle li span{
 	width: 250px;
 	text-align:center;
 	font: 1.5em arial, sans-serif;
-	line-height:normal;
 	vertical-align:middle;
+	display:table-cell;
 }
 
 
