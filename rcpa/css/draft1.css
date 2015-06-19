@@ -234,7 +234,7 @@ a:hover{
 	margin:0 10px;
 	background-color:white;
 	display:inline-block;
-	margin-bottom: 56px;
+	margin-bottom: 66px;
 	position:relative;
 }
 
@@ -246,7 +246,7 @@ a:hover{
 	vertical-align:middle;
 	position:absolute;
 	height:56px;
-	top:250px;
+	top:260px;
 }
 
 #symbol_caption{
