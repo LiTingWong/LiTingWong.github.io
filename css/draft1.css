@@ -249,7 +249,7 @@ a:hover{
 	text-transform:uppercase;
 	font-weight:bolder;
 	text-align:center;
-	margin: 20px 0;
+	margin: 50px 0;
 	font-size:2.5em;
 	color: #0F3361;
 }
@@ -261,6 +261,25 @@ a:hover{
 	font-style: italic;
 	color: #0F3361;
 }
+
+#corporate_champions{
+	padding: 20px;
+}
+
+#corporate_champions ul{
+	text-align:center;
+	list-style:none;
+}
+
+#corporate_champions ul li{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin: 0 10px;
+	background-color: white;
+	display: inline-block;
+}
+
 
 
 #article{
