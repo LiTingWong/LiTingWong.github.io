@@ -18,7 +18,8 @@ margin: 0;
 padding: 0;
 border: 0;
 font-size: 100%;
-font: inherit;
+font-family: inherit;
+font-style: inherit;
 vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -227,6 +228,7 @@ a:hover{
 	display:table;
 	margin: auto;
 	width:50%;
+	height:500px;
 }
 
 .pic_description{
