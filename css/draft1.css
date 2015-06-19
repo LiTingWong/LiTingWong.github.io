@@ -18,8 +18,7 @@ margin: 0;
 padding: 0;
 border: 0;
 font-size: 100%;
-font-family: inherit;
-font-style: inherit;
+font: inherit;
 vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,6 +52,7 @@ border-spacing: 0;
 body{
 	background-color:#eee;
 	overflow-x:hidden;
+	font: 100% arial, sans-serif;
 }
 
 div{
@@ -60,6 +60,12 @@ div{
 	padding:0px;
 	border:0px;
 }
+strong{
+	font-weight:bold;
+}
+
+
+
 
 /***************************************************/
 
@@ -237,7 +243,24 @@ a:hover{
 	vertical-align:middle;
 }
 
+/****** end of pic desc *********/
 
+#our_partners{
+	text-transform:uppercase;
+	font-weight:bolder;
+	text-align:center;
+	margin: 20px 0;
+	font-size:2.5em;
+	color: #0F3361;
+}
+
+.heading2{
+	text-align: center;
+	margin: 20px 0;
+	font-size: 1.5em;
+	font-style: italic;
+	color: #0F3361;
+}
 
 
 #article{
