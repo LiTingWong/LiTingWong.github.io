@@ -105,6 +105,7 @@ div{
 	list-style:none;
 	color: white;
 	background:none;
+	margin-left:160px;
 }
 #nav ul li{
 	display:inline-block;
@@ -150,6 +151,7 @@ a:hover{
 	height:70%;
 	background-color:rgb(221, 212, 207);
 	position:relative;
+	min-height:500px;
 }
 
 #title_wrapper{
@@ -179,8 +181,9 @@ a:hover{
 
 #symbol_circle li{
 	border-radius: 50%;
-	width: 33.33%;
-	height:250px;
+	width: 150px;
+	height:150px;
+	margin:0 auto;
 }
 
 #symbol_caption{
@@ -188,7 +191,8 @@ a:hover{
 }
 
 #symbol_caption li{
-	width: 33.33%;
+	width: 150px;
+	margin:0 auto;
 	text-align:center;
 	font: 1.5em arial, sans-serif;
 }
