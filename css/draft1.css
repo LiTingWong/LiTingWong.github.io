@@ -262,16 +262,16 @@ a:hover{
 	color: #0F3361;
 }
 
-#corporate_champions{
-	padding: 20px;
+.partners_circle{
+	padding-bottom: 20px;
 }
 
-#corporate_champions ul{
+.partners_circle ul{
 	text-align:center;
 	list-style:none;
 }
 
-#corporate_champions ul li{
+.partners_circle ul li{
 	border-radius: 50%;
 	width: 120px;
 	height: 120px;
