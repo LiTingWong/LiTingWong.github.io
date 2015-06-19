@@ -181,8 +181,43 @@ a:hover{
 #symbol_wrapper{
 	padding:30px 0px;
 }
+/*
+#symbol_table_wrapper{
+	padding:30px 0px;
+}
 
-#symbol_circle{
+#div_symbol_table_wrapper{
+	padding:30px 0px;
+}
+
+#div_symbol_table_wrapper divv ul{
+	list-style:none;
+	text-align:center;
+}
+
+#div_symbol_table_wrapper divv ul li{
+	list-style:none;
+	text-align:center;
+	display:inline-block;
+}
+
+#div_symbol_table_wrapper divv ul li .circle{
+	border-radius: 50%;
+	width: 250px;
+	height:250px;
+	margin:0 10px;
+	background-color:white;
+}
+
+#div_symbol_table_wrapper divv ul li .caption{
+	width: 250px;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+	margin: 0 10px;
+	vertical-align:middle;
+}*/
+
+.symbol_circle{
 	list-style:none;
 	text-align:center;
 	/*
@@ -199,6 +234,19 @@ a:hover{
 	margin:0 10px;
 	background-color:white;
 	display:inline-block;
+	margin-bottom: 56px;
+	position:relative;
+}
+
+#symbol_circle li div{
+	width: 250px;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+	margin: 0 10px;
+	vertical-align:middle;
+	position:absolute;
+	height:56px;
+	top:250px;
 }
 
 #symbol_caption{
@@ -215,16 +263,6 @@ a:hover{
 	vertical-align:middle;
 }
 
-#symbol_caption_div{
-	text-align:center;
-}
-
-#symbol_caption_div div{
-	width:250px;
-	font: 1.5em arial, sans-serif;
-	margin: 0 10px;
-	display:inline-block;
-}
 	
 /*********** end of symbol ********/
 
