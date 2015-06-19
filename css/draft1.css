@@ -172,13 +172,11 @@ a:hover{
 
 
 /******** circle link ***********/
-
-.circle{
-  border-radius: 50%;
+#symbol_wrapper{
+	padding:30px 0px;
 }
 
 #symbol_circle{
-	margin-top:30px;
 	list-style:none;
 	text-align:center;
 	/*
