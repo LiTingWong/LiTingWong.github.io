@@ -192,7 +192,7 @@ a:hover{
 	height:250px;
 	margin:0 10px;
 	background-color:white;
-	display:inlie-block;
+	display:inline-block;
 }
 
 #symbol_caption{
@@ -206,6 +206,7 @@ a:hover{
 	font: 1.5em arial, sans-serif;
 	margin: 0 10px;
 	display:inline-block;
+	vertical-align:middle;
 }
 
 #symbol_caption_div{
