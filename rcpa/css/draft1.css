@@ -179,7 +179,7 @@ a:hover{
 
 /******** circle link ***********/
 #symbol_wrapper{
-	padding:30px 0px;
+	padding:30px 0px 20px 0px;
 }
 /*
 #symbol_table_wrapper{
@@ -234,7 +234,7 @@ a:hover{
 	margin:0 10px;
 	background-color:white;
 	display:inline-block;
-	margin-bottom: 66px;
+	margin-bottom: 76px;
 	position:relative;
 }
 
