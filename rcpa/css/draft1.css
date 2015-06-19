@@ -135,7 +135,7 @@ strong{
 
 #nav ul li:last-child:after {
   color: transparent;
-  margin-right: 50px
+  margin-right: 0px
 }
 
 a:hover{
