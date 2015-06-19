@@ -143,6 +143,8 @@ a:hover{
 	height:100%;
 }
 
+
+/********** title image **********/
 #main_pic_div{
 	width:100%;
 	height:70%;
@@ -153,18 +155,43 @@ a:hover{
 #title_wrapper{
 	position:absolute;
 	bottom:0;
+	right:0;
 }
 
 .pic_title{
 	text-align:right;
-	font-size:3em;
+	font: 3em arial, sans-serif;
+	font-weight: 700;
 	color:white;
 }
 
 
 
+/******** circle link ***********/
 
+.circle{
+  border-radius: 50%;
+}
 
+#symbol_circle{
+	list-style:none;
+}
+
+#symbol_circle li{
+	border-radius: 50%;
+	width: 33.33%;
+	height:250px;
+}
+
+#symbol_caption{
+	list-style:noone;
+}
+
+#symbol_caption li{
+	width: 33.33%;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+}
 
 
 #article{
