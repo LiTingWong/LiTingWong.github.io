@@ -155,7 +155,7 @@ a:hover{
 	bottom:0;
 }
 
-#main_pic_div div{
+.pic_title{
 	text-align:right;
 	font-size:3em;
 	color:white;
