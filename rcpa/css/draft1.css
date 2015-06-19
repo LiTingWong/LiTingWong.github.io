@@ -227,7 +227,7 @@ a:hover{
 	*/
 }
 
-#symbol_circle li{
+.symbol_circle li{
 	border-radius: 50%;
 	width: 250px;
 	height:250px;
@@ -238,7 +238,7 @@ a:hover{
 	position:relative;
 }
 
-#symbol_circle li div{
+.symbol_circle li div{
 	width: 250px;
 	text-align:center;
 	font: 1.5em arial, sans-serif;
