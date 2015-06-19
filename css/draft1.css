@@ -224,15 +224,17 @@ a:hover{
 /*********** end of symbol ********/
 
 #description_wrapper{
-	position:absolute;
-	bottom:0;
-	right:0;
+	display:table;
+	margin: auto;
+	width:50%;
 }
 
 .pic_description{
 	text-align:center;
-	font: 1em arial, sans-serif;
+	font: 1.5em arial, sans-serif;
 	color:white;
+	display:table-cell;
+	vertical-align:middle;
 }
 
 
