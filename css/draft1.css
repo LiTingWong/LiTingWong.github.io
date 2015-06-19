@@ -26,8 +26,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
+html{
+	height:100%
+}
 body {
 line-height: 1;
+height:100%
 }
 ol, ul {
 list-style: none;
@@ -143,7 +147,7 @@ a:hover{
 	background-color:#0F3361;
 }
 
-#main_pic_div span{
+#main_pic_div div{
 	text-align:right;
 	font:5em;
 	color:white;
