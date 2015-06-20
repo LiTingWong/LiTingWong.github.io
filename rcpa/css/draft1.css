@@ -248,6 +248,27 @@ a:hover{
 	display:inline-block;
 	margin-bottom: 76px;
 	position:relative;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#business_opportunities{
+	background-image:url(../images/business_opportunities.png); 
+	/*background-position: 0px -300px;*/
+}
+
+#develop_talent{
+	background-image:url(../images/develop_talent.png); 
+	/*background-position: 0px -300px;*/
+}
+
+#inclusive_spaces{
+	background-image:url(../images/inclusive_spaces.png); 
+	/*background-position: 0px -300px;*/
 }
 
 .symbol_circle li div{
