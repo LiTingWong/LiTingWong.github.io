@@ -168,8 +168,8 @@ a:hover{
 }
 
 #main_pic1{
-	background-image:url(../images/main_pic.png);
-	background-position: 0px -300px;
+	background-image:url(../images/main_pic_resize.png);
+	/*background-position: 0px -300px;*/
 }
 
 
