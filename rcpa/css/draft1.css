@@ -300,7 +300,7 @@ a:hover{
 	
 /*********** end of symbol ********/
 #main_pic2{
-	background-image:url(../images/main_pic2.png); 
+	background-image:url(/rcpa/images/main_pic2.png); 
 	/*background-position: 0px -300px;*/
 }
 
@@ -361,15 +361,15 @@ a:hover{
 }
 
 #kpmg{
-	background-image:url(../images/kpmg.png);
+	background-image:url(/rcpa/images/kpmg.png);
 }
 
 #td{
-	background-image:url(../images/td.png);
+	background-image:url(/rcpa/images/td.png);
 }
 
 #telus{
-	background-image:url(../images/telus.png);
+	background-image:url(/rcpa/images/telus.png);
 }
 
 
