@@ -160,6 +160,9 @@ a:hover{
 	background-color:rgb(221, 212, 207);
 	position:relative;
 	min-height:500px;
+	background-image:url(../images/main_pic.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
 }
 
 #title_wrapper{
