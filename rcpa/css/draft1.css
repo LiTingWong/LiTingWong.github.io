@@ -163,6 +163,10 @@ a:hover{
 	background-image:url(../images/main_pic.png);
 	background-repeat:no-repeat;
 	background-position:bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #title_wrapper{
