@@ -159,15 +159,19 @@ a:hover{
 	background-color:rgb(221, 212, 207);
 	position:relative;
 	height:700px;
-	background-image:url(../images/main_pic.png);
 	background-repeat:no-repeat;
 	background-position:bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+#main_pic1{
+	background-image:url(../images/main_pic.png);
 	background-position: 0px -300px;
 }
+
 
 #title_wrapper{
 	position:absolute;
@@ -280,6 +284,10 @@ a:hover{
 
 	
 /*********** end of symbol ********/
+#main_pic2{
+	background-image:url(../images/main_pic2.png); 
+	/*background-position: 0px -300px;*/
+}
 
 #description_wrapper{
 	display:table;
