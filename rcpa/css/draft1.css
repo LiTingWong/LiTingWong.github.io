@@ -181,7 +181,7 @@ a:hover{
 
 .pic_title{
 	text-align:right;
-	font: 3em arial, sans-serif;
+	font: 5em arial, sans-serif;
 	font-weight: 700;
 	color:white;
 	margin-right: 30px;
@@ -308,13 +308,13 @@ a:hover{
 	display:table;
 	margin: auto;
 	width:50%;
-	height:500px;
+	height:100%;
 	padding: 40px 0;
 }
 
 .pic_description{
 	text-align:center;
-	font: 2em arial, sans-serif;
+	font: 2.5em arial, sans-serif;
 	color:white;
 	display:table-cell;
 	vertical-align:middle;
@@ -355,6 +355,21 @@ a:hover{
 	margin: 0 10px;
 	background-color: white;
 	display: inline-block;
+	background-repeat:no-repeat;
+	background-size: 100px auto;
+    background-position: center;
+}
+
+#kpmg{
+	background-image:url(../images/kpmg.png);
+}
+
+#td{
+	background-image:url(../images/td.png);
+}
+
+#telus{
+	background-image:url(../images/telus.png);
 }
 
 
