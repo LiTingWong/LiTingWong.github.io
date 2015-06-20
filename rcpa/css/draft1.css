@@ -244,31 +244,25 @@ a:hover{
 	width: 250px;
 	height:250px;
 	margin:0 10px;
-	background-color:white;
+	background-color:#0F3361;
 	display:inline-block;
 	margin-bottom: 76px;
 	position:relative;
 	background-repeat:no-repeat;
-	background-position:bottom;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-size: 190px 190px;
+    background-position: center;
 }
 
 #business_opportunities{
 	background-image:url(../images/business_opportunities.png); 
-	/*background-position: 0px -300px;*/
 }
 
 #develop_talent{
-	background-image:url(../images/develop_talent.png); 
-	/*background-position: 0px -300px;*/
+	background-image:url(../images/develop_talent.png);/
 }
 
 #inclusive_spaces{
 	background-image:url(../images/inclusive_spaces.png); 
-	/*background-position: 0px -300px;*/
 }
 
 .symbol_circle li div{
