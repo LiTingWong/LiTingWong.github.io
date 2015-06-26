@@ -31,7 +31,10 @@ include_once(getenv("DOCUMENT_ROOT")."/robot_sdk_pux4af98/gt_lib.php");
 <!--<script src="js/jquery.touchSwipe.min.js"></script>--> 
 
 
+
+
 <script type="text/javascript">
+/************ three slides carounsel ***********/
 //carousel_!
 $(function() {
 	var $l = $('#carousel-left'),
@@ -90,9 +93,9 @@ $(function() {
 		}
 	});
 });
+/************ end of three slides carounsel ***********/
 
-
-
+/************ seven slides carousel **************/
 $(document).ready(function(){
 	 Carousel.init({
         target: $('.carousel')
@@ -117,7 +120,7 @@ $(document).ready(function(){
     });
 });
 
-
+/************ seven slides carousel **************/
 
 
 </script>
@@ -129,74 +132,7 @@ $(document).ready(function(){
 </script>
 
 <style>
-#carousel_1{}
-#wrapper {
-	width: 950px;
-	height: 450px;
-	margin: -225px 0 0 -475px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-}
-#carousel-left,
-#carousel-right {
-	width: 450px;
-	height: 325px;
-	overflow: hidden;
-	position: absolute;
-	top: 65px;
-	z-index: 1;
-}
-#carousel-left {
-	left: 25px;
-}
-#carousel-right {
-	right: 25px;
-}
-#carousel-center {
-	width: 550px;
-	height: 400px;
-	overflow: hidden;
-	position: absolute;
-	top: 25px;
-	left: 250px;
-	z-index: 2;
-}
-.caroufredsel_wrapper {
-	box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3 );
-}
-.caroufredsel_wrapper img {
-	display: block;
-	float: left;
-}
-#prev,
-#next {
-	background: #ccc;
-	color: #fff;
-	font-size: 25px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 0 1px 2px rgba( 0, 0, 0, 0.6 );
-	line-height: 26px;
-	display: block;
-	width: 30px;
-	height: 30px;
-	margin-top: -15px;
-	position: absolute;
-	top: 50%;
-	z-index: 0;
-}
-#prev {
-	left: 0;
-}
-#next {
-	right: 0;
-}
-#prev:hover,
-#next:hover {
-	background: #bbb;
-}
+
 
 .sliderBox{
 	wdith:100%;
@@ -206,23 +142,7 @@ $(document).ready(function(){
 	margin-bottom:50px;
 }
 
-.carousel a {
-  background: #ccc;
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 1px 2px rgba( 0, 0, 0, 0.6 );
-  line-height: 26px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  position: absolute;
-  top: 50%;
-  z-index: 0;
-}
+
 
 
 </style>
