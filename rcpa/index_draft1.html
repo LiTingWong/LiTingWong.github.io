@@ -16,14 +16,14 @@ $(document).ready(function(){
 	var loop = 0;
 	while ($('#pic_title1').width()+30> $('#main_pic1').width()) {
 		loop++;
-		$('.pic_title').css('font-size', 5-0.5*loop + 'em');
+		$('.pic_title').css('font-size', 5-0.2*loop + 'em');
 	}
 	$(window).resize(function() {
 		$('.pic_title').css('font-size', '5em');
 		var loop = 0;
 		while ($('#pic_title1').width()+30> $('#main_pic1').width()) {
 			loop++;
-			$('.pic_title').css('font-size', 5-0.5*loop + 'em');
+			$('.pic_title').css('font-size', 5-0.2*loop + 'em');
 		}
 	});
 });
