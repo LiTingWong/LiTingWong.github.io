@@ -9,7 +9,17 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+<script src="/js/jquery-1.11.3.min"></script>
 </head>
+<script type="text/javascript">
+$(document).ready(function(){
+	var loop = 0;
+	while ($('#title_wrapper').width()> $('#title_wrapper').parent().width()) {
+		loop++;
+		$('.pic_title').css('font-size', 5-0.5*loop + 'em');
+	}
+});
+</script>
 
 <body>
 <div id="wrapper_box">
@@ -46,9 +56,15 @@
 <div id="symbol_wrapper">
 	<div>
 		<ul class="symbol_circle">
-			<li id="business_opportunities"><div><span>Address business oppportunities.</span></div></li>
-			<li id="develop_talent"><div><span>Develop talent.</span></div></li>
-			<li id="inclusive_spaces"><div><span>Create inclusive spaces.</span></div></li>
+			<li id="business_opportunities">
+				<div><span>Address business oppportunities.</span></div>
+			</li>
+			<li id="develop_talent">
+				<div><span>Develop talent.</span></div>
+			</li>
+			<li id="inclusive_spaces">
+				<div><span>Create inclusive spaces.</span></div>
+			</li>
 		</ul>
 	</div>
 </div>

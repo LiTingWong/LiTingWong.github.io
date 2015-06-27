@@ -310,6 +310,7 @@ a:hover{
 	width:50%;
 	height:100%;
 	padding: 40px 0;
+	min-height: 700px;
 }
 
 .pic_description{
