@@ -9,12 +9,12 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
-<script src="/js/jquery-1.11.3.min"></script>
+<script src="../js/jquery-1.11.3.min"></script>
 </head>
 <script type="text/javascript">
 $(document).ready(function(){
 	var loop = 0;
-	while ($('#title_wrapper').width()> $('#title_wrapper').parent().width()) {
+	while ($('#pic_title1').width()> $('#title_wrapper').width()) {
 		loop++;
 		$('.pic_title').css('font-size', 5-0.5*loop + 'em');
 	}
@@ -47,7 +47,7 @@ $(document).ready(function(){
 		<!--<div class="pic_title">Leveraging the</div>
 		<div class="pic_title">power of divisity to</div>
 		<div class="pic_title">maximize human potential</div>-->
-		<div class="pic_title" style="white-space:pre">Leveraging the
+		<div id="pic_title1" class="pic_title" style="white-space:pre">Leveraging the
 			power of diversity to
 			maximize human potential</div>
 	</div>
