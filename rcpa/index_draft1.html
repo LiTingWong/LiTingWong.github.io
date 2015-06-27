@@ -13,11 +13,13 @@
 </head>
 <script type="text/javascript">
 $(document).ready(function(){
-	var loop = 0;
-	while ($('#pic_title1').width()> $('#main_pic1').width()) {
-		loop++;
-		$('.pic_title').css('font-size', 5-0.5*loop + 'em');
-	}
+	$(window).resize(function() {
+		var loop = 0;
+		while ($('#pic_title1').width()> $('#main_pic1').width()) {
+			loop++;
+			$('.pic_title').css('font-size', 5-0.5*loop + 'em');
+		}
+	});
 });
 </script>
 
@@ -47,9 +49,9 @@ $(document).ready(function(){
 		<!--<div class="pic_title">Leveraging the</div>
 		<div class="pic_title">power of divisity to</div>
 		<div class="pic_title">maximize human potential</div>-->
-		<div id="pic_title1" class="pic_title" style="white-space:pre">Leveraging the
-power of diversity to
-maximize human potential</div>
+		<div id="pic_title1" class="pic_title" style="white-space:pre-line">Leveraging the
+			power of diversity to
+			maximize human potential</div>
 	</div>
 </div>
 <!--- end of main_pic-->
