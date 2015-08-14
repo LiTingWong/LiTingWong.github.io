@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+/*************reset**********************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+html{
+	/*height:100%*/
+}
+body {
+line-height: 1;
+/*height:100%*/
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+body{
+	background-color:#eee;
+	overflow-x:hidden;
+	font: 100% arial, sans-serif;
+}
+
+div{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+strong{
+	font-weight:bold;
+}
+
+
+
+
+/***************************************************/
+
+#wrapper_box{
+	width:100%;
+	margin-right:auto;
+	margin-left: auto;
+	position:relative;
+	background-color:white;
+	padding:0px 0px;
+	border: 0px solid #ccc;
+	height:100%;
+	background-color: #eee;
+}
+
+
+/********** beginning of nav ****************/
+.nav_wrap{
+	background-color:#0F3361;
+	position: relative;
+	z-index: 999;
+}
+	
+#nav{
+	max-width:98%;
+	margin: 0 auto;
+	text-align: right;
+	font: menu;
+  	font-size: 1em;
+	position:relative;
+}
+
+#logo{
+	display:inline-block;
+	height:3 em;
+	max-height:80px;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	margin: auto 0;
+}
+
+#nav ul{
+	list-style:none;
+	color: white;
+	background:none;
+}
+#nav ul li{
+	display:inline-block;
+}
+#nav ul li a{
+	color:white;
+	float: left;
+  	padding: 1.2em 13px 1.2em 13px;
+  	text-decoration: none;
+}
+/*
+#nav ul li:after {
+  content: "|";
+  display: inline-block;
+  margin-left: 2px;
+  color: #fff;
+  padding-top: 1.17em;
+}
+*/
+#nav ul li:last-child:after {
+  color: transparent;
+  margin-right: 0px
+}
+
+a:hover{
+	text-decoration:underline;
+	color:orange;
+}
+
+
+/************** end of nav ****************/
+
+/***********begining of page content***********/
+.page_content{
+	width:100%;
+	height:100%;
+}
+
+
+/********** title image **********/
+.main_pic_div{
+	width:100%;
+	background-color:rgb(221, 212, 207);
+	position:relative;
+	min-height:700px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#main_pic1{
+	background-image:url(../images/main_pic_resize.png);
+	/*background-position: 0px -300px;*/
+}
+
+
+#title_wrapper{
+	position:absolute;
+	bottom:20px;
+	right:0;
+}
+
+.pic_title{
+	text-align:right;
+	font: 5em arial, sans-serif;
+	font-weight: 700;
+	color:white;
+	margin-right: 30px;
+}
+
+
+
+/******** circle link ***********/
+#symbol_wrapper{
+	padding:30px 0px 20px 0px;
+}
+/*
+#symbol_table_wrapper{
+	padding:30px 0px;
+}
+
+#div_symbol_table_wrapper{
+	padding:30px 0px;
+}
+
+#div_symbol_table_wrapper divv ul{
+	list-style:none;
+	text-align:center;
+}
+
+#div_symbol_table_wrapper divv ul li{
+	list-style:none;
+	text-align:center;
+	display:inline-block;
+}
+
+#div_symbol_table_wrapper divv ul li .circle{
+	border-radius: 50%;
+	width: 250px;
+	height:250px;
+	margin:0 10px;
+	background-color:white;
+}
+
+#div_symbol_table_wrapper divv ul li .caption{
+	width: 250px;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+	margin: 0 10px;
+	vertical-align:middle;
+}*/
+
+.symbol_circle{
+	list-style:none;
+	text-align:center;
+	/*
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+	*/
+}
+
+.symbol_circle li{
+	border-radius: 50%;
+	width: 250px;
+	height:250px;
+	margin:0 10px;
+	background-color:#0F3361;
+	display:inline-block;
+	margin-bottom: 76px;
+	position:relative;
+	background-repeat:no-repeat;
+	background-size: 190px 190px;
+    background-position: center;
+}
+
+#business_opportunities{
+	background-image:url(../images/business_opportunities.png); 
+}
+
+#develop_talent{
+	background-image:url(../images/develop_talent.png);/
+}
+
+#inclusive_spaces{
+	background-image:url(../images/inclusive_spaces.png); 
+}
+
+.symbol_circle li div{
+	width: 250px;
+	height:56px;
+	margin: 0 10px;
+	position:absolute;
+	top:260px;
+	display:table;
+}
+
+.symbol_circle li span{
+	width: 250px;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+	vertical-align:middle;
+	display:table-cell;
+}
+
+
+#symbol_caption{
+	list-style:none;
+	text-align:center;
+}
+
+#symbol_caption li{
+	width: 250px;
+	text-align:center;
+	font: 1.5em arial, sans-serif;
+	margin: 0 10px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+	
+/*********** end of symbol ********/
+#main_pic2{
+	background-image:url(/rcpa/images/main_pic2.png); 
+	/*background-position: 0px -300px;*/
+}
+
+#description_wrapper{
+	display:table;
+	margin: auto;
+	width:50%;
+	height:100%;
+	padding: 40px 0;
+	min-height: 700px;
+}
+
+.pic_description{
+	text-align:center;
+	font: 2.5em arial, sans-serif;
+	color:white;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/****** end of pic desc *********/
+
+#our_partners{
+	font-weight:bolder;
+	text-align:center;
+	margin: 50px 0;
+	font-size:2.5em;
+	color: #0F3361;
+}
+
+.heading2{
+	text-align: center;
+	margin: 20px 0;
+	font-size: 1.5em;
+	font-style: italic;
+	color: #0F3361;
+}
+
+.partners_circle{
+	padding-bottom: 20px;
+}
+
+.partners_circle ul{
+	text-align:center;
+	list-style:none;
+	margin:10px 0;
+}
+
+.partners_circle ul li{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin: 0 10px;
+	background-color: white;
+	display: inline-block;
+	background-repeat:no-repeat;
+	background-size: 90px auto;
+    background-position: center;
+}
+
+#kpmg{
+	background-image:url(/rcpa/images/kpmg.png);
+}
+
+#td{
+	background-image:url(/rcpa/images/td.png);
+}
+
+#telus{
+	background-image:url(/rcpa/images/telus.png);
+}
+
+
+
+#article{
+	width: 100%;
+	/*background-color: rgba(255,204,0,0.5);*/
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding: 30px 0px;
+}
+
+#article h1 {
+	text-align: center;
+	color: #ff5a45;
+	letter-spacing: 1px;
+	font-size: 2em;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #212121;
+	line-height: 3em;
+}
+
+#article p {
+	text-align: center;
+	line-height: 1.5em;
+ 	margin-bottom: 1em;
+}
+
