@@ -44,7 +44,9 @@
   margin: 0 auto 30px auto;
   padding:0;
 }
-
+.sub .timeline-wrapper h2 {
+	font-size: 1.4em;
+}
 .timeline-wrapper h2 {
   background: url(../images/timeline_century_tick.gif) left center no-repeat;
   font-family: Palatino, "Times New Roman", Times, serif;
@@ -91,6 +93,9 @@
     /* margin: 0 12px 0 0; */
     padding: 4px 4px 4px 0;
     position: relative;
+}
+.sub .timeline-series dt {
+	font-size:1.2em;
 }
 .timeline-series dt {
       background: url(../images/timeline_decade_tick.gif) left center no-repeat;
@@ -148,6 +153,10 @@
 }
 .timeline-event-content {
   display: none;
+}
+
+.sub .timeline-event-content p {
+	font-size:1em;
 }
 .timeline-event-content p {
       /* clear: left; */

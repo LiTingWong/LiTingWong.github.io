@@ -19,6 +19,11 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: 100%;
+  }
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
