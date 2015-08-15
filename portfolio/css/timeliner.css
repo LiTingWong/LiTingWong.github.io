@@ -127,6 +127,10 @@
 .timeline-series dt a .open {
   color: #7DBADF;
 }
+.timeline-series dt.strong a {
+    color: #7D7878;
+    text-shadow: 1px 1px 10px #D2C9C9;
+}
 .timeline-series dt a:hover {
   color: #7DBADF;
 }

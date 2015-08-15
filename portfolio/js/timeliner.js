@@ -143,7 +143,7 @@
                     .removeClass('closed')
                     .addClass('open')
                     .animate({ fontSize: settings.fontOpen }, settings.baseSpeed);
-				if($(eventHeading).hasClass("middle")){
+				if($(eventBody).hasClass("middle")){
 					$(eventBody).slideDown(settings.speed*settings.baseSpeed);
 				}
 				else{

@@ -138,3 +138,25 @@ a img {
   line-height: 0;
   font-size: 0;
 }
+.clickForDetail{
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+
+.clickForDetail a{
+    background-color: white;
+    color: chocolate;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.6);
+}
+.image-div{
+	width:80%;
+	margin:20px auto;
+	text-align:center;
+}
+.image-div img{
+	max-height:365px;
+	max-width:100%;
+}
