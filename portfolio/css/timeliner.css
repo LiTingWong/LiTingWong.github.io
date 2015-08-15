@@ -123,6 +123,7 @@
 .timeline-series dt a {
   color: #999;
   cursor: pointer;
+  white-space:normal;
 }
 .timeline-series dt a .closed {
   color: #999;
