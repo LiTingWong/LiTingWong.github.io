@@ -138,7 +138,11 @@
                     // if flat mode, make sure parent series is visible
                     $(eventHeading).parents(settings.timelineTriggerContainer).show();
                 }
-
+				
+				if($(eventHeading).length == 0){
+					var newSelector = $(eventHeading).selector.replace(/ /g,'');
+					eventHeading = $(newSelector);
+				}
                 $(eventHeading).find('a')
                     .removeClass('closed')
                     .addClass('open')
