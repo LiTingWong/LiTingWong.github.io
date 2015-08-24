@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Li Ting Wong's portfolio</title>
-<!--base href="file:///C:/Users/LiTing/Documents/LiTingWong.github.io/portfolio/index.html" target="_new">-->
-<base href="http://litingwong.github.io/portfolio/index.html" target="_self">
+<base href="file:///C:/Users/LiTing/Documents/LiTingWong.github.io/portfolio/index.html" target="_new">
+<!--<base href="http://litingwong.github.io/portfolio/index.html" target="_self">-->
 <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/timeliner.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/rwd.css" type="text/css" media="screen">
@@ -32,7 +32,6 @@
 <div class="container">
 
 <div id="timeline1" class="timeline-container-without-border">
-	<!--<button id="show-all-button1" class="timeline-toggle">+ expand all</button>-->
 	<br class="clear">
 	<div class="timeline-wrapper timeline-wrapper-middle">
 		<h2 id="aboutMe" class="milestone middle"><span>About Me</span></h2>
@@ -66,28 +65,27 @@
 		
 	</div>
 	<!-- /.timeline-wrapper -->
-	<div class="timeline-wrapper middle projects">
-		<h2 id="projects" class="milestone middle projects"><span>Work/Projects</span></h2>
-		<dl class="timeline-series timeline-series-without-dash no-border projects">
-			<dt id="realized" class="timeline-event no-border projects"><a class="no-boder"></a></dt>
-			<dd class="timeline-event-content projects" id="realizedEX"> <br class="clear">
+	<div id="projectsWrapper" class="timeline-wrapper middle sub-timeline">
+		<h2 id="projects" class="milestone middle sub-timeline"><span>Work/Projects</span></h2>
+		<dl class="timeline-series timeline-series-without-dash no-border sub-timeline">
+			<dt id="projectsEvent" class="timeline-event no-border sub-timeline"><a class="no-boder"></a></dt>
+			<dd class="timeline-event-content sub-timeline" id="projectsEventEX"><br class="clear">
 			</dd>
 			<!-- /.timeline-event-content -->
 		</dl>
 		<!-- /.timeline-series --> 
 	</div>
 	<!-- /.timeline-wrapper --> 
-	<br class="clear">
-</div>
-<!-- /#timelineContainer -->
-
-
-
-
-
-<!-------------------------- projects timeline ---------------------------------->
+	
+	
+	
+	
+	
+	
+	
+	<!-------------------------- projects timeline ---------------------------------->
 <div id="timeline" class="timeline-container sub" style="display:none;">
-	<button class="timeline-toggle">+ expand all</button>
+	<button id="timelineButton" class="timeline-toggle">+ expand all</button>
 	<br class="clear">
 	<div class="timeline-wrapper">
 		<h2 class="timeline-time"><span>Present</span></h2>
@@ -223,6 +221,71 @@
 	<br class="clear">
 </div>
 <!-- /#timelineContainer --> 
+	
+	
+<!--                  end of project timeline ----------------------->	
+	
+	
+	
+	
+	<div id="competitionsWrapper" class="timeline-wrapper middle sub-timeline">
+		<h2 id="competitions" class="milestone middle sub-timeline"><span>Competitions</span></h2>
+		<dl class="timeline-series timeline-series-without-dash no-border sub-timeline">
+			<dt id="competitionsEvent" class="timeline-event no-border sub-timeline"><a class="no-boder"></a></dt>
+			<dd class="timeline-event-content sub-timeline" id="competitionsEventEX"> <br class="clear">
+			</dd>
+			<!-- /.timeline-event-content -->
+		</dl>
+		<!-- /.timeline-series --> 
+	</div>
+	<!-- /.timeline-wrapper --> 
+	
+<!-------------------------- projects timeline ---------------------------------->
+<div id="timeline2" class="timeline-container sub" style="display:none;">
+	<button id="timeline2Button" class="timeline-toggle">+ expand all</button>
+	<br class="clear">
+	<div class="timeline-wrapper">
+		<h2 class="timeline-time"><span>Present</span></h2>
+		<dl class="timeline-series">
+			<dt id="portfolio2" class="timeline-event"><a>Portfolio</a></dt>
+			<dd class="timeline-event-content sub" id="portfolio2EX">
+				<p>•	New online portfolio is built to repelace the wix site</p>
+				<br class="clear">
+			</dd>
+			
+			<dt id="creativeInstyncts2" class="strong timeline-event"><a>Web Developer for CreativeInstyncts</a></dt>
+			<dd class="timeline-event-content" id="creativeInstyncts2EX">
+				<p>•	Build the upholstery shopping site <a href= "http://www.creativeinstyncts.com"> Creative Instyncts </a>as the main developer.
+				•	Project includes MySQL, PHP and javaScript.
+				</p>
+				<br class="clear">
+			</dd>
+			
+			
+			<!-- /.timeline-event-content -->
+		</dl>
+		<!-- /.timeline-series --> 
+	</div>
+	<!-- /.timeline-wrapper -->
+	<br class="clear">
+</div>
+<!-- /#timelineContainer --> 
+
+	
+	
+	
+	
+	
+	
+	<br class="clear">
+</div>
+<!-- /#timelineContainer -->
+
+
+
+
+
+
 <script>/* 
 <!-------------------------- projects timeline ---------------------------------->
 <div id="timeline2" class="timeline-container">
@@ -270,13 +333,17 @@
 
 <!-- GLOBAL CORE SCRIPTS --> 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.min.js"></script>-->
+<script src="js/jquery-1.11.3.js"></script>
 <!--<script type="text/javascript" src="inc/colorbox.js"></script> -->
 <script type="text/javascript" src="js/timeliner.js"></script> 
 <script>
 		$(document).ready(function() {
 			$.timeliner({
 				startOpen:[],
+			});
+			$.timeliner({
+				timelineContainer: '#timeline2'
 			});
 			
 			$.timeliner({
@@ -286,7 +353,9 @@
 				startState: 'closed',
 				expandAllText: '+ Show All',
 				collapseAllText: '- Hide All',
-				startOpen:['#aboutMeTitle']
+				startOpen:['#aboutMeTitle'],
+				subTimeline:[{item:"#projectsWrapper", timeline:"#timeline"},
+						     {item:"#competitionsWrapper", timeline:"#timeline2"}]
 			});
 			/*$.timeliner({
 				timelineContainer: '#timeline2'

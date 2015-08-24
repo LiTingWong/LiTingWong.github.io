@@ -114,10 +114,12 @@
                 // value: string
                 // default: + expand all
 
-                collapseAllText: options['collapseAllText'] || '- collapse all'
+                collapseAllText: options['collapseAllText'] || '- collapse all',
                 //sets the text of the expandAll selector after the timeline is fully expanded
                 // value: string
                 // default: - collapse all
+				subTimeline: options['subTimeline'] || '[]'
+				
             };
 
             function openStartEvents(events) {
@@ -133,7 +135,6 @@
             }
 
             function openEvent(eventHeading,eventBody) {
-
                 if(settings.startState==='flat'){
                     // if flat mode, make sure parent series is visible
                     $(eventHeading).parents(settings.timelineTriggerContainer).show();
@@ -153,14 +154,18 @@
 				else{
                 	$(eventBody).show(settings.speed*settings.baseSpeed);
 				}
-				/*if(!$(eventHeading).hasClass("projects") && $(eventHeading).parents("#timeline").length == 0){
-						$("#timeline").hide(800);
-				}*/
-				if($(eventHeading).hasClass("projects")){
-					$("#timeline").show(settings.speed*settings.baseSpeed);
+
+				var i;
+				var id = $(eventHeading).parents("div.timeline-wrapper").attr('id');
+				for( i=0; i < settings.subTimeline.length; i++){ 
+					var a =  $(settings.subTimeline[i].item).find('a');
+					if($(settings.subTimeline[i].item).find('a').hasClass('open')){
+						$(settings.subTimeline[i].timeline).show(settings.speed*settings.baseSpeed);
+					}
 				}
-				
+
             }
+
 
             function closeEvent(eventHeading,eventBody) {
                 $(eventHeading).find('a')
@@ -173,8 +178,16 @@
 				else{
                 	$(eventBody).hide(settings.speed*settings.baseSpeed);
 				}
-				if($(eventHeading).hasClass("projects")){
-					$("#timeline").hide(settings.speed*settings.baseSpeed);
+				
+				var i;
+				var id = $(eventHeading).parents("div.timeline-wrapper").attr('id');
+				for( i=0; i < settings.subTimeline.length; i++){ 
+					var a =  $(settings.subTimeline[i].item).find('a');
+					if($(settings.subTimeline[i].item).find('a').hasClass('closed')){
+						$(settings.subTimeline[i].timeline).hide(settings.speed*settings.baseSpeed);
+						var but = $(settings.subTimeline[i].timeline+"Button");
+						$(settings.subTimeline[i].timeline+"Button").removeClass('expanded').html(settings.expandAllText);
+					}
 				}
             }
 
@@ -211,7 +224,7 @@
 
                 // Minor Event Click
                 $(settings.timelineContainer).on("click",settings.timelineTriggerContainer+" "+settings.timelineEventContainer,function(){
-
+					event.stopPropagation();
                     var currentId = $(this).attr('id');
 
                     // if the event is currently open
@@ -236,7 +249,6 @@
                 // Overrides the 'oneOpen' option
                 $(settings.timelineContainer).on("click",settings.timelineSectionMarker,function()
                 {
-
                     // number of minor events under this major event
                     var numEvents = $(this).parents(settings.timelineSection).find(settings.timelineTriggerContainer).length;
 
@@ -259,12 +271,15 @@
                 });
 
                 // All Markers/Events
-                var el = settings.timelineContainer+" "+".timeline-toggle";
+                /*var el = settings.timelineContainer+" "+".timeline-toggle";
                 $(el).click(function()
                 {
+					event.stopPropagation();
+					var c=$(el).parents(settings.timelineContainer).find(settings.timelineTriggerAnchor,settings.timelineTriggerContainer);
+						var d=$(el).parents(settings.timelineContainer).find(settings.timelineEXContent);
                     if($(el).hasClass('expanded'))
                     {
-
+						
                         closeEvent($(el).parents(settings.timelineContainer).find(settings.timelineTriggerAnchor,settings.timelineTriggerContainer),$(el).parents(settings.timelineContainer).find(settings.timelineEXContent));
                         $(el).removeClass('expanded').html(settings.expandAllText);
 
@@ -275,7 +290,27 @@
 
 
                     }
-                });
+                });*/
+				var el = settings.timelineContainer+"Button";
+				$(el).off('click').on('click',function(){
+					event.stopPropagation();
+					var e = el;
+					var c=$(el).parents(settings.timelineContainer).find(settings.timelineTriggerAnchor,settings.timelineTriggerContainer);
+						var d=$(el).parents(settings.timelineContainer).find(settings.timelineEXContent);
+                    if($(el).hasClass('expanded'))
+                    {
+						
+                        closeEvent($(el).parents(settings.timelineContainer).find(settings.timelineTriggerAnchor,settings.timelineTriggerContainer),$(el).parents(settings.timelineContainer).find(settings.timelineEXContent));
+                        $(el).removeClass('expanded').html(settings.expandAllText);
+
+                    } else{
+
+                        openEvent($(el).parents(settings.timelineContainer).find(settings.timelineTriggerAnchor,settings.timelineTriggerContainer),$(el).parents(settings.timelineContainer).find(settings.timelineEXContent));
+                        $(el).addClass('expanded').html(settings.collapseAllText);
+
+
+                    }
+				});
             }
 	    };
 
