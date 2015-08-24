@@ -14,10 +14,10 @@
     margin: 25px 0;
 	width:100%;
 }
-#designPhilosophy1{
+#designPhilosophy1, #competitions1{
 	display:none;
 }
-#designPhilosophy2{
+#designPhilosophy2, #competitions2{
 	display:inline-block;
 }
 
