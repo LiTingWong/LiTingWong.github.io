@@ -236,7 +236,7 @@
 			<h2 class="timeline-time"><span>Present</span></h2>
 			<dl class="timeline-series">
 				<dt id="tetra" class="timeline-event"><a>Tetra Design Competition - Category Winner</a></dt>
-				<dd class="timeline-event-content" id="ctetraEX">
+				<dd class="timeline-event-content" id="tetraEX">
 					<p>•	Designed a device to aid the physically disabled to use modern technology</p>
 					<br class="clear">
 				</dd>
@@ -245,7 +245,7 @@
 					<p>•	Provided a solution for SuitsU to increase their donations in both quantity and quality.</p>
 					<br class="clear">
 				</dd>
-				<dt id="oec" class="strong timeline-event"><a>Ontario Eningneer Competition, Junior Design - Participant</a></dt>
+				<dt id="oec" class="timeline-event"><a>Ontario Eningneer Competition, Junior Design - Participant</a></dt>
 				<dd class="timeline-event-content" id="oecEX">
 					<p>•	Represented University of Toronto to participate in OEC.</p>
 					<br class="clear">
@@ -256,7 +256,7 @@
 					•	Awarded the chance to participate to OEC as UofT representative.</p>
 					<br class="clear">
 				</dd>
-				<dt id="accer" class="strong timeline-event"><a>Accerator Weekend - Participant</a></dt>
+				<dt id="accer" class="timeline-event"><a>Accerator Weekend - Participant</a></dt>
 				<dd class="timeline-event-content" id="accerEX">
 					<p>•	Developed a business model for bike seat cover.</p>
 					<br class="clear">
@@ -277,12 +277,12 @@
 					<p></p>
 					<br class="clear">
 				</dd>
-				<dt id="socialVenture" class="strong timeline-event"><a>Chan Low San Scholarship</a></dt>
+				<dt id="socialVenture" class="timeline-event"><a>Chan Low San Scholarship</a></dt>
 				<dd class="timeline-event-content" id="socialVentureEX">
 					<p></p>
 					<br class="clear">
 				</dd>
-				<dt id="oec" class="strong timeline-event"><a>Global Federation of Chinese Business Women Scholarship</a></dt>
+				<dt id="oec" class="timeline-event"><a>Global Federation of Chinese Business Women Scholarship</a></dt>
 				<dd class="timeline-event-content" id="oecEX">
 					<p></p>
 					<br class="clear">
@@ -355,10 +355,11 @@
 <script>
 		$(document).ready(function() {
 			$.timeliner({
-				startOpen:[],
+				startOpen:['#leaderg']
 			});
 			$.timeliner({
-				timelineContainer: '#timeline2'
+				timelineContainer: '#timeline2',
+				startOpen:['#tetra','#socialVenture','#utek']
 			});
 			
 			$.timeliner({
