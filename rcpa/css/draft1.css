@@ -323,25 +323,32 @@ a:hover{
 /****** end of pic desc *********/
 /******** event ************/
 #event1{
-	background-image:url(/rcpa/images/divercity_city.JPG);
 	height: 100px;
 	-webkit-transition:  height 1.5s; /* For Safari 3.1 to 6.0 */
 	transition:  height 1.5s;
+	position:relative;
+
 	/*background-position: 0px -300px;*/
+	/*background-image:url(/rcpa/images/divercity_city.JPG);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
 	text-align: center;
 	overflow-y: hidden;
-	opacity: 1;
-    filter: brightness(50%);
-    -webkit-filter: brightness(50%);
-    -moz-filter: brightness(50%);
-    filter: url(#brightness);
-}
 
+
+.event_pic{
+	position:absolute;
+	top:0;
+	width:100%;
+	opacity: 1;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  filter: url(#brightness);
+}
 #event1:hover{
 	height: 500px;
 }
