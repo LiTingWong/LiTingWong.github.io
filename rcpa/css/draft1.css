@@ -343,12 +343,14 @@ a:hover{
 	width: 100%;
 	/* font-size: 20px; */
 	color: red;
-	font: 5em arial, sans-serif;
+	font: 3em arial, sans-serif;
 	font-weight: 700;
 }
-#event_desc{
+.event_desc{
 	font: 2.5em arial, sans-serif;
 	color:white;
+	width:70%;
+	margin:auto;
 }
 
 
