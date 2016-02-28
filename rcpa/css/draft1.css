@@ -325,8 +325,8 @@ a:hover{
 #event1{
 	background-image:url(/rcpa/images/divercity_city.JPG);
 	height: 100px;
-	-webkit-transition:  height 2s; /* For Safari 3.1 to 6.0 */
-	transition:  height 2s;
+	-webkit-transition:  height 1.5s; /* For Safari 3.1 to 6.0 */
+	transition:  height 1.5s;
 	/*background-position: 0px -300px;*/
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -334,6 +334,12 @@ a:hover{
 	-o-background-size: cover;
 	background-size: cover;
 	text-align: center;
+	overflow-y: hidden;
+	opacity: 1;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    filter: url(#brightness);
 }
 
 #event1:hover{
@@ -345,9 +351,10 @@ a:hover{
 	color: red;
 	font: 3em arial, sans-serif;
 	font-weight: 700;
+	line-height: 100px;
 }
 .event_desc{
-	font: 2.5em arial, sans-serif;
+	font: 1.5em arial, sans-serif;
 	color:white;
 	width:70%;
 	margin:auto;
