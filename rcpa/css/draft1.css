@@ -10,8 +10,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 margin: 0;
@@ -22,7 +22,7 @@ font: inherit;
 vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
@@ -88,7 +88,7 @@ strong{
 	position: relative;
 	z-index: 999;
 }
-	
+
 #nav{
 	max-width:98%;
 	margin: 0 auto;
@@ -254,7 +254,7 @@ a:hover{
 }
 
 #business_opportunities{
-	background-image:url(../images/business_opportunities.png); 
+	background-image:url(../images/business_opportunities.png);
 }
 
 #develop_talent{
@@ -262,7 +262,7 @@ a:hover{
 }
 
 #inclusive_spaces{
-	background-image:url(../images/inclusive_spaces.png); 
+	background-image:url(../images/inclusive_spaces.png);
 }
 
 .symbol_circle li div{
@@ -297,10 +297,10 @@ a:hover{
 	vertical-align:middle;
 }
 
-	
+
 /*********** end of symbol ********/
 #main_pic2{
-	background-image:url(/rcpa/images/main_pic2.png); 
+	background-image:url(/rcpa/images/main_pic2.png);
 	/*background-position: 0px -300px;*/
 }
 
@@ -320,8 +320,22 @@ a:hover{
 	display:table-cell;
 	vertical-align:middle;
 }
-
 /****** end of pic desc *********/
+/******** event ************/
+#event1{
+	background-image:url(/rcpa/images/main_pic2.png);
+	height: 100px;
+	-webkit-transition:  height 2s; /* For Safari 3.1 to 6.0 */
+	transition:  height 2s;
+	/*background-position: 0px -300px;*/
+}
+
+#event1:hover{
+	height: 200px;
+}
+
+
+
 
 #our_partners{
 	font-weight:bolder;
@@ -380,7 +394,7 @@ a:hover{
 	/*background-color: rgba(255,204,0,0.5);*/
 	margin-left:auto;
 	margin-right:auto;
-	
+
 	padding: 30px 0px;
 }
 
@@ -399,4 +413,3 @@ a:hover{
 	line-height: 1.5em;
  	margin-bottom: 1em;
 }
-
