@@ -337,17 +337,20 @@ a:hover{
 	background-size: cover;*/
 	text-align: center;
 	overflow-y: hidden;
+	z-index:2;
 }
 
 .event_pic{
 	position:absolute;
 	top:0;
+	left:0;
 	width:100%;
 	opacity: 1;
   filter: brightness(50%);
   -webkit-filter: brightness(50%);
   -moz-filter: brightness(50%);
   filter: url(#brightness);
+	z-index:-1;
 }
 #event1:hover{
 	height: 500px;
