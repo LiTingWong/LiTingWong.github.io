@@ -85,8 +85,9 @@ strong{
 /********** beginning of nav ****************/
 .nav_wrap{
 	background-color:#0F3361;
-	position: relative;
+	position: fixed;;
 	z-index: 999;
+	width:100%;
 }
 
 #nav{
