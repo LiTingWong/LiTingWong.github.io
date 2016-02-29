@@ -322,10 +322,13 @@ a:hover{
 }
 /****** end of pic desc *********/
 /******** event ************/
-#evnets{
+#events{
 	font-size: 2.5em;
 	color: #0F3361;
 	height: 200px;
+	font-weight: 700;
+	width:100%;
+	text-align: center;
 	line-height: 200px;
 }
 .event{
