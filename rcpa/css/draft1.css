@@ -358,9 +358,9 @@ a:hover{
 	left:0;
 	width:100%;
 	opacity: 1;
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-  -moz-filter: brightness(50%);
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
   filter: url(#brightness);
 	z-index:-1;
 }
