@@ -32,7 +32,7 @@ $.fn.scrollTo = function( target, options, callback ){
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
-    offsetTop     : 50,
+    offsetTop     : 60,
     duration      : 500,
     easing        : 'swing'
   }, options);
@@ -46,9 +46,6 @@ $.fn.scrollTo = function( target, options, callback ){
   });
 }
 
-/*$('#about').click(function(){
-		$('html, body').scrollTo('#about_anchor');
-	});*/
 </script>
 
 <body>
@@ -58,12 +55,12 @@ $.fn.scrollTo = function( target, options, callback ){
 <div class="nav_wrap">
 	<div id="nav"> <img id="logo" src="images/RCPA_logo.png" alt="RCPA">
 		<ul>
-			<li><a id=home href='#'>HOME</a></li>
+			<li><a id=home onclick="$('body').scrollTo('body');">HOME</a></li>
 			<li><a id=about onclick="$('body').scrollTo('#about_anchor');">ABOUT</a></li>
-			<li> <a id=event href='#event_anchor'>EVENT</a></li>
-			<li><a id=members href='#partners_anchor'>PARTNERS</a></li>
-			<li> <a id=nitiatives href='#'>INITIATIVES</a></li>
-			<li> <a id=contacts href='#'>CONTACTS</a></li>
+			<li> <a id=event onclick="$('body').scrollTo('#event_anchor');">EVENT</a></li>
+			<li><a id=members onclick="$('body').scrollTo('#partners_anchor');">PARTNERS</a></li>
+			<li> <a id=nitiatives onclick="$('body').scrollTo('#partners_anchor');">INITIATIVES</a></li>
+			<li> <a id=contacts onclick="$('body').scrollTo('#partners_anchor');"'>CONTACTS</a></li>
 		</ul>
 	</div>
 </div>

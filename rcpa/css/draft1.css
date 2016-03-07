@@ -118,6 +118,7 @@ strong{
 }
 #nav ul li{
 	display:inline-block;
+	cursor: pointer;
 }
 #nav ul li a{
 	color:white;
