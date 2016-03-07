@@ -27,6 +27,26 @@ $(document).ready(function(){
 		}
 	});
 });
+
+$.fn.scrollTo = function( target, options, callback ){
+  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  var settings = $.extend({
+    scrollTarget  : target,
+    offsetTop     : 50,
+    duration      : 500,
+    easing        : 'swing'
+  }, options);
+  return this.each(function(){
+    var scrollPane = $(this);
+    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+      if (typeof callback == 'function') { callback.call(this); }
+    });
+  });
+}
+
+$('#about').click($('body').scrollTo('#about_anchor'););
 </script>
 
 <body>
@@ -37,7 +57,7 @@ $(document).ready(function(){
 	<div id="nav"> <img id="logo" src="images/RCPA_logo.png" alt="RCPA">
 		<ul>
 			<li><a id=home href='#'>HOME</a></li>
-			<li><a id=about href='#about_anchor'>ABOUT</a></li>
+			<li><a id=about href='#'>ABOUT</a></li>
 			<li> <a id=event href='#event_anchor'>EVENT</a></li>
 			<li><a id=members href='#partners_anchor'>PARTNERS</a></li>
 			<li> <a id=nitiatives href='#'>INITIATIVES</a></li>
