@@ -46,7 +46,9 @@ $.fn.scrollTo = function( target, options, callback ){
   });
 }
 
-$('#about').click($('body').scrollTo('#about_anchor'););
+$('#about').click(function(){
+		$('body').scrollTo('#about_anchor');
+	});
 </script>
 
 <body>
