@@ -398,9 +398,11 @@ a:hover{
 #our_partners{
 	font-weight:bolder;
 	text-align:center;
-	margin: 50px 0;
+	/*margin: 50px 0;*/
 	font-size:2.5em;
 	color: #0F3361;
+	line-height: 200px;
+	height:200px;
 }
 
 .heading2{
