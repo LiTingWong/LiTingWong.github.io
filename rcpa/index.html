@@ -46,9 +46,9 @@ $.fn.scrollTo = function( target, options, callback ){
   });
 }
 
-$('#about').click(function(){
+/*$('#about').click(function(){
 		$('html, body').scrollTo('#about_anchor');
-	});
+	});*/
 </script>
 
 <body>
@@ -59,7 +59,7 @@ $('#about').click(function(){
 	<div id="nav"> <img id="logo" src="images/RCPA_logo.png" alt="RCPA">
 		<ul>
 			<li><a id=home href='#'>HOME</a></li>
-			<li><a id=about>ABOUT</a></li>
+			<li><a id=about onclick="$('body').scrollTo('#about_anchor');">ABOUT</a></li>
 			<li> <a id=event href='#event_anchor'>EVENT</a></li>
 			<li><a id=members href='#partners_anchor'>PARTNERS</a></li>
 			<li> <a id=nitiatives href='#'>INITIATIVES</a></li>
