@@ -30,9 +30,10 @@ $(document).ready(function(){
 
 $.fn.scrollTo = function( target, options, callback ){
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+	var offset = $('#nav').height();
   var settings = $.extend({
     scrollTarget  : target,
-    offsetTop     : 60,
+    offsetTop     : offset,
     duration      : 500,
     easing        : 'swing'
   }, options);
