@@ -25,6 +25,8 @@ $(document).ready(function(){
 			loop++;
 			$('.pic_title').css('font-size', 5-0.2*loop + 'em');
 		}
+		var offset = $('#nav').height();
+		$(".page_content").css("padding-top", offset);
 	});
 	var offset = $('#nav').height();
 	$(".page_content").css("padding-top", offset);
